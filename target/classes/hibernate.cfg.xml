@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.password">123456</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=MovieManagement</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping class="com.poly.entity.Seat"/>
+        <mapping class="com.poly.entity.Food"/>
+        <mapping class="com.poly.entity.Showtimes"/>
+        <mapping class="com.poly.entity.FoodBillDetail"/>
+        <mapping class="com.poly.entity.Ticket"/>
+        <mapping class="com.poly.entity.Room"/>
+        <mapping class="com.poly.entity.TicketDetail"/>
+        <mapping class="com.poly.entity.Movie"/>
+        <mapping class="com.poly.entity.Cinema"/>
+        <mapping class="com.poly.entity.Member"/>
+        <mapping class="com.poly.entity.Period"/>
+        <mapping class="com.poly.entity.MovieGenreDetail"/>
+        <mapping class="com.poly.entity.Sysdiagrams"/>
+        <mapping class="com.poly.entity.GenreMovie"/>
+        <mapping class="com.poly.entity.Employee"/>
+    </session-factory>
+</hibernate-configuration>
